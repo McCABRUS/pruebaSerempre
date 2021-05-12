@@ -19,6 +19,91 @@ body {
   font-family: 'Circular-Std', sans-serif;
 }
 
+.header{
+    height: 58px;
+    width: 100%;
+    text-align-last: center;
+    position: relative;
+}
+hr {
+    color: #EEEFF2;
+    border: solid;
+    margin: 18px 110px 48px 112px;
+    border-width: 1px;
+}
+
+.header img{
+    height: 100%;
+    width: auto;
+}
+
+.left-content{
+    width: 50%;
+    position: relative;
+    height: auto;
+    float: left;
+    margin-left: 112px;
+}
+
+.right-content{
+    width: 50%;
+    position: relative;
+    height: auto;
+    float: left;
+    margin-right: 110px;
+}
+
+.gallery-container{
+    width: 592px;
+    height: 452px;
+    position: relative;
+
+}
+
+#featuredImg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    float: left;
+    position: relative;
+    border: 1px solid #EEEFF2;
+    border-radius: 8px;
+}
+
+#galleryImg1{
+    position: relative;
+    width: 184px;
+    height: 100px;
+    float: left;
+    border: 1px solid #EEEFF2;
+    border-radius: 8px;
+}
+
+#galleryImg2{
+    position: relative;
+    width: 184px;
+    height: 100px;
+    float: left;
+    margin-right: 16px;
+    margin-left: 16px;
+    border: 1px solid #EEEFF2;
+    border-radius: 8px;
+}
+
+#galleryImg3{
+    position: relative;
+    width: 184px;
+    height: 100px;
+    float: left;
+    border: 1px solid #EEEFF2;
+    border-radius: 8px;
+}
+
+.selectedImg{
+    border: 2px solid #000 !important;
+}
+
+
 .footer {
     position: fixed;
     border-top: 1px solid #D2D2D7;
