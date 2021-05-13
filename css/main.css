@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: Circular-Std;
-    font-weight: bold;
+    font-weight: 500;
     src: url("../fonts/Circular-Std-Medium.otf") format("opentype");
 }
 
@@ -28,8 +28,11 @@ body {
 hr {
     color: #EEEFF2;
     border: solid;
-    margin: 18px 110px 48px 112px;
     border-width: 1px;
+}
+
+.headerSeparator{
+    margin: 18px 110px 48px 112px;
 }
 
 .header img{
@@ -38,19 +41,21 @@ hr {
 }
 
 .left-content{
-    width: 50%;
+    width: 592px;
     position: relative;
     height: auto;
     float: left;
-    margin-left: 112px;
+    margin-left: 17%;
+    margin-right: 33px;
 }
 
 .right-content{
-    width: 50%;
+    width: 592px;
     position: relative;
     height: auto;
     float: left;
-    margin-right: 110px;
+    margin-right: 18.5%;
+    margin-bottom: 153px;
 }
 
 .gallery-container{
@@ -60,48 +65,233 @@ hr {
 
 }
 
-#featuredImg{
-    width: 100%;
-    height: auto;
+.featuredImg{
+    width: 590px;
+    height: 336px;
     margin-bottom: 16px;
     float: left;
     position: relative;
-    border: 1px solid #EEEFF2;
+    border: 2px solid #EEEFF2;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#galleryImg1{
-    position: relative;
-    width: 184px;
-    height: 100px;
-    float: left;
-    border: 1px solid #EEEFF2;
-    border-radius: 8px;
+.featuredImg img{
+    width: auto;
 }
+
+.hidden{
+    display: none !important;
+}
+
 
 #galleryImg2{
-    position: relative;
-    width: 184px;
-    height: 100px;
-    float: left;
     margin-right: 16px;
     margin-left: 16px;
-    border: 1px solid #EEEFF2;
-    border-radius: 8px;
 }
 
-#galleryImg3{
-    position: relative;
-    width: 184px;
+
+.buttonImg{
+    position: relative; 
+    width: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     float: left;
-    border: 1px solid #EEEFF2;
+    border: 2px solid #EEEFF2;
     border-radius: 8px;
 }
 
-.selectedImg{
-    border: 2px solid #000 !important;
+.buttonImg:hover {
+    border-color: #B6BCC6;
 }
+
+.buttonImg:focus {
+    outline: #D8DCE0 solid 3px;
+}
+
+.buttonImg img{
+    width: 100px;
+}
+
+.selected{
+    border-color: #1E96D4 !important;
+}
+
+h3{
+    font-size: 13.333px;
+    font-weight: normal;
+    color: #6B7280;
+    letter-spacing: 1.11px;
+
+}
+
+.redText{
+    color: #CB253C; 
+    margin-top: 0px; 
+}
+
+h1{
+    color:#111111;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 8px 0px 0px 0px;
+}
+
+h2{
+    color:#6B7280;
+    font-weight: normal;
+    font-size: 27.648px;
+    margin: 0px 0px 0px 0px;
+}
+
+h4{
+    color:#6B7280;
+    font-size: 19.2px;
+    font-weight: 500;
+}
+
+.item{
+    float: left;
+    margin-right: 24px;
+}
+
+.selectedSection{
+    color: #111111;
+    text-decoration: underline;
+}
+
+.overviewContainder{
+    width: 100%;
+}
+
+.text{
+    float: left;
+    color:#6B7280;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#iconsContainer{
+    margin-left: 26px;
+    height: 64px;
+    width: 600px;
+    margin-top: 76px;
+}
+
+.icon{
+    width: 22px;
+    margin-left: 45%;
+    height: 27px;
+    display: flex;
+    position: relative;
+    margin-bottom: 16px;
+
+}
+
+.icons{
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.iconText{
+    color:#111111;
+    font-size: 14px;
+    font-weight: normal;
+    float: none;
+}
+
+.optionsTitle{
+    color:#111111;
+    float: left;
+    width: 100%;
+}
+
+.itemSection{
+    width:592px;
+    float:left;
+}
+
+.colorItem{
+    float:left;
+    border: 2px solid #EEEFF2;
+    border-radius: 8px;
+    width: 236px;
+    padding:24px 24px 24px 24px;
+
+}
+
+.colorItem:hover {
+    border-color: #B6BCC6;
+}
+.itemTitle{
+    color:#111111;
+    width: 80%;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.addedPrice{
+    font-size: 14px;
+    font-weight: normal;
+    color:#111111;
+    float: right;
+}
+
+.itemText{
+    color:#6B7280;
+    font-size: 14px;
+    font-weight: normal;
+    float: left;
+    margin-top: 8px;
+}
+
+.warrantyItem{
+    float:left;
+    border: 2px solid #EEEFF2;
+    border-radius: 8px;
+    padding:24px 24px 24px 24px;
+    margin-bottom: 16px;
+    width: 544px;
+    
+}
+.warrantyItem:hover {
+    border-color: #B6BCC6;
+}
+
+#specificationsContainter{
+    display: inline-block;
+    width: 100%;
+}
+
+.specificationsSeparator{
+    width: 100%;
+    float: left;
+    margin: 16px 0px 16px 0px;
+}
+
+.leftSpecification{
+    color:#111111;
+    font-size: 14px;
+    font-weight: 500;
+    float:left;
+}
+
+.rightSpecification{
+    color:#111111;
+    font-size: 14px;
+    font-weight: normal;
+    float:right;
+}
+
+
 
 
 .footer {
@@ -115,6 +305,92 @@ hr {
     z-index: 999;
     background-color: #F5F5F7;
 }
+#leftFooter{
+    margin: 40px 0px 40px 17%;
+    width: 592px;
+    height: 72px;
+    float:left;
 
+}
+
+#rightFooter{
+    margin: 40px 18.5% 40px 0px;
+    width: 340px;
+    height: 72px;
+    float: right;
+}
+
+.footerColumn{
+    width:280px;
+    height: 72px;
+    float: left;
+}
+
+.footerColumnTitle{
+    color:#111111;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 8px;
+    float: left;
+}
+
+.footerColumnText{
+    color:#6B7280;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+}
+
+#firstColumnFooter{
+    margin-right: 32px;
+}
+
+#secondColumnFooter{
+    height: 72px;
+}
+
+#lastFooterColumn{
+    float:right;
+}
+
+#lastFooterColumnLeft{
+    width:195px;
+    float:left;
+    height:72px;
+    margin:9px 0px;
+}
+
+#totalPriceFooter{
+    color:#111111;
+    font-size: 27.648px;
+    font-weight: bold;
+    float: right;
+}
+
+#financingText{
+    float:right;
+    margin-top: 2px;
+}
+
+#lastFooterColumnRight{
+    float: right;
+    width: 113px;
+    margin-left: 32px;
+}
+
+#footerButton{
+    float: right;
+    height: 56px;
+    border: none;
+    background-color: #1E96D4;
+    border-radius: 8px;
+    width: 113px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 

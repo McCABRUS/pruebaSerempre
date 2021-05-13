@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link href="css/main.css" rel="stylesheet">
 		<title>MOMENTUM True Wireless 2</title>
@@ -14,20 +14,184 @@
 				<div class="header">
 					<img src="img/logo.png" alt="Serempre Logo" />
 				</div>
-				<hr>
+				<hr class="headerSeparator">
 				<div class="left-content">
 					<div class="gallery-container">
-						<img id="featuredImg" src="img/1.jpg" alt="Sennheiser MOMENTUM True Wireless 2" />
-						<img id="galleryImg1" class="selectedImg" src="img/1.jpg" alt="Sennheiser MOMENTUM True Wireless 2" />
-						<img id="galleryImg2" src="img/2.jpg" alt="Sennheiser MOMENTUM True Wireless 2" />
-						<img id="galleryImg3" src="img/3.jpg" alt="Sennheiser MOMENTUM True Wireless 2" />
+						<picture id="img1" class="featuredImg">
+							<source media="(min-width:320px)" srcset="img/1.png">
+							<source media="(min-width:768px)" srcset="img/1@2x.png">
+							<source media="(min-width:1280px)" srcset="img/1@3x.png">
+							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						</picture>
+						<picture id="img2" class="featuredImg hidden">
+							<source media="(min-width:320px)" srcset="img/2.png">
+							<source media="(min-width:768px)" srcset="img/2@2x.png">
+							<source media="(min-width:1280px)" srcset="img/2@3x.png">
+							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						</picture>
+						<picture id="img3" class="featuredImg hidden">
+							<source media="(min-width:320px)" srcset="img/3.png">
+							<source media="(min-width:768px)" srcset="img/3@2x.png">
+							<source media="(min-width:1280px)" srcset="img/3@3x.png">
+							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						</picture>
+						
+						<picture id="galleryImg1" class="buttonImg selected">
+							<source media="(min-width:320px)" srcset="img/1.png">
+							<source media="(min-width:768px)" srcset="img/1@2x.png">
+							<source media="(min-width:1280px)" srcset="img/1@3x.png">
+							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						</picture>
+						
+						<picture id="galleryImg2" class="buttonImg">
+							<source media="(min-width:320px)" srcset="img/2.png">
+							<source media="(min-width:768px)" srcset="img/2@2x.png">
+							<source media="(min-width:1280px)" srcset="img/2@3x.png">
+							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						</picture>
+
+						<picture id="galleryImg3" class="buttonImg">
+							<source media="(min-width:320px)" srcset="img/3.png">
+							<source media="(min-width:768px)" srcset="img/3@2x.png">
+							<source media="(min-width:1280px)" srcset="img/3@3x.png">
+							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						</picture>
+						
 					</div> 
+					<div id="iconsContainer">
+						<div class="icons">
+							<picture class="icon">
+								<source media="(min-width:320px)" srcset="img/Path.png">
+								<source media="(min-width:768px)" srcset="img/Path@2x.png">
+								<source media="(min-width:1280px)" srcset="img/Path@3x.png">
+								<img alt="Customizable Touch Controls" />
+							</picture>
+							<span class="iconText">Customizable Touch Controls</span>
+						</div>
+						<div class="icons">
+							<picture class="icon">
+								<source media="(min-width:320px)" srcset="img/Shape.png">
+								<source media="(min-width:768px)" srcset="img/Shape@2x.png">
+								<source media="(min-width:1280px)" srcset="img/Shape@3x.png">
+								<img alt="Built-in Equalizer" />
+							</picture>
+							<span class="iconText">Built-in Equalizer</span>
+						</div>
+						<div class="icons">
+							<picture class="icon">
+								<source media="(min-width:320px)" srcset="img/CombinedShape.png">
+								<source media="(min-width:768px)" srcset="img/CombinedShape@2x.png">
+								<source media="(min-width:1280px)" srcset="img/CombinedShape@3x.png">
+								<img alt="Active Noise Cancellation" />
+							</picture>
+							<span class="iconText">Active Noise Cancellation</span>
+						</div>
+					</div>
 				</div>
 				<div class="right-content">
+					<h3 class="redText">NEW RELEASE</h3>
+					<h1>MOMENTUM True Wireless 2</h1>
+					<h2>Earbunds that put sound first</h2>
+					<br><br><br>
+					<h3>STARTING AT</h3>
+					<h1>$295.95</h1>
+					<div id="optionsContainer">
+						<h4 class="item selectedSection">Overview</h4>
+						<h4 class="item">Features</h4>
+						<h4 class="item">What's in the box?</h4>
+					</div>
+					<div id="overviewContainter">
+						<span class="text">For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True Wireless 2 is no different. Thanks to leading audio technology and innovation, these new earbuds deliver the best listening experience anytime, anywhere. With improved ergonomics designed for full day wearing and refined touch controls for a more personalised experience, they have been finely crafted for the most discerning listener and aim to simplify your life by enhancing your everyday.</span>
+						<h4 class="optionsTitle">Choose your finish.</h4>
+						<div id="itemSection">
+							<div class="colorItem" style="margin-right: 16px;">
+								<span class="itemTitle">Ivory White</span>
+								<span class="itemText">For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True.</span>
+							</div>
+							<div class="colorItem" style="margin-bottom:72px;">
+								<span class="itemTitle">Matte Black</span>
+								<span class="itemText">Of all of the celestial bodies that capture our attention and fascination as astronomers.</span>
+							</div>
+						</div>
+						<h4 class="optionsTitle">Would you like to add extended warranty coverage?.</h4>
+						<div id="itemSection">
+							<div class="warrantyItem selected">
+								<span class="itemTitle">2 years coverage</span>
+								<span class="itemText">For the past 75 years, Sennheiser has put sound first.</span>
+								<span class="addedPrice hidden">- $75</span>
+							</div>
+							<div class="warrantyItem">
+								<span class="itemTitle">3 years coverage</span>
+								<span class="itemText">For the past 75 years, Sennheiser has put sound first.</span>
+								<span class="addedPrice">+ $75</span>
+							</div>
+						</div>
+					</div>
+
+					<div id="featuresContainter" class="hidden">
+						<h4 class="optionsTitle">Features.</h4>
+						<div id="itemSection">
+							<div class="warrantyItem selected">
+								<span class="itemTitle">Voice Assistant support</span>
+								<span class="addedPrice hidden">- $25</span>
+							</div>
+							<div class="warrantyItem">
+								<span class="itemTitle">Customizable controls</span>
+								<span class="addedPrice">+ $25</span>
+							</div>
+						</div>
+					</div>
+
+					<div id="specificationsContainter"  class="hidden">
+						<h4 class="optionsTitle">Specifications.</h4>
+						<hr class="specificationsSeparator" style="margin-top: -16px;">
+						<span class="leftSpecification">Dimensions</span>
+						<span class="rightSpecification">76.8 x 43.8 x 34.7 mm (earbuds and charging case)</span>
+						<hr class="specificationsSeparator">
+						<span class="leftSpecification">USB Standard</span>
+						<span class="rightSpecification">USB-C</span>
+						<hr class="specificationsSeparator">
+						<span class="leftSpecification">Power supply</span>
+						<span class="rightSpecification">Sennheiser 7mm dynamic driver</span>
+						<hr class="specificationsSeparator">
+						<span class="leftSpecification">Frequency response (Microphone)</span>
+						<span class="rightSpecification">100 Hz to 10 kHz</span>
+						<hr class="specificationsSeparator">
+						<span class="leftSpecification">Frequency response</span>
+						<span class="rightSpecification">5 - 21,000 Hz</span>
+						<hr class="specificationsSeparator">
+						<span class="leftSpecification">Noise cancellation</span>
+						<span class="rightSpecification">Single-Mic ANC per earbud side</span>
+						<hr class="specificationsSeparator">
+					</div>
+
+
 				</div>
+
 			</article>
 		</section>
 		<footer class="footer">
+			<div id="leftFooter">
+				<div id="firstColumnFooter" class="footerColumn">
+					<span class="footerColumnTitle">Free Shipping</span>
+					<span class="footerColumnText">Get 2-day free shipping anywhere in North America.</span>
+				</div>
+				<div id="secondColumnFooter" class="footerColumn">
+					<span class="footerColumnTitle">2 years warranty</span>
+					<span class="footerColumnText">If anything goes wrong in the first two years, we'll replace it for free.</span>
+				</div>
+			</div>
+			<div id="rightFooter">
+				<div id="lastFooterColumn">
+					<div id="lastFooterColumnLeft">
+						<span id="totalPriceFooter">$295.95</span>
+						<span id="financingText" class="itemText">Need financing? Learn more</span>
+					</div>
+					<div id="lastFooterColumnRight">
+						<button id="footerButton">Buy now</button>
+					</div>
+				</div>
+			</div>
 
 		</footer>
 	</body>
