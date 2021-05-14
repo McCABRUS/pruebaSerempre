@@ -17,6 +17,7 @@
 
 body {
   font-family: 'Circular-Std', sans-serif;
+  overflow-x: hidden;
 }
 
 .header{
@@ -40,21 +41,21 @@ hr {
     width: auto;
 }
 
-.left-content{
-    width: 592px;
-    position: relative;
+.left-content {
+    width: 50%;
+    position: fixed;
     height: auto;
     float: left;
-    margin-left: 17%;
-    margin-right: 33px;
+    right: 620px;
 }
 
-.right-content{
-    width: 592px;
+.right-content {
+    width: 50%;
     position: relative;
     height: auto;
     float: left;
-    margin-right: 18.5%;
+    margin-left: 50%;
+    margin-right: 20%;
     margin-bottom: 153px;
 }
 
@@ -175,7 +176,9 @@ h4{
     float: left;
     color:#6B7280;
     font-weight: normal;
+    margin-right: 10px;
     font-size: 16px;
+    width: 592px;
 }
 
 #iconsContainer{
@@ -273,7 +276,7 @@ h4{
 
 #specificationsContainter{
     display: inline-block;
-    width: 100%;
+    width: 90%;
 }
 
 .specificationsSeparator{
@@ -311,7 +314,7 @@ h4{
     background-color: #F5F5F7;
 }
 #leftFooter{
-    margin: 40px 0px 40px 17%;
+    margin: 40px 0px 40px 8%;
     width: 592px;
     height: 72px;
     float:left;
@@ -398,6 +401,172 @@ h4{
     cursor: pointer;
 }
 
+#iconsOverviewContainer{
+    display: none;
+}
+
 #footerButton:hover{
     background-color: #66BEEB;
+}
+@media (max-width: 768px) {
+
+    .left-content{
+        width: 100%;
+        margin-left: 11px;
+        margin-right: 10px;
+        height: 285px;
+        position: relative;
+        right: unset;
+    }
+
+    .right-content{
+        width: 100%;
+        margin-left: 11px;
+        margin-right: 10px;
+        margin-bottom: 200px;
+    }
+
+    .redText {
+        margin-top: 48px;
+    }
+    .gallery-container{
+        width: 100%;
+    }
+
+    .featuredImg{
+        width: 94%;
+        height: 183px;
+    }
+    .buttonImg {
+        width: 30%;
+        height: 14%;
+    }
+
+    .buttonImg img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #galleryImg2 {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    #iconsContainer {
+        display: none;
+    }
+
+    #iconsOverviewContainer{
+        display: inline-block;
+        height: auto;
+        width: 100%;
+    }
+    .icons {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .colorItem {
+        width: 85%;
+        margin-bottom: 17px !important;
+    }
+    .warrantyItem {
+        width: 85%;
+    }
+
+    #specificationsContainter {
+        display: grid;
+    }
+    #leftFooter{
+        display: none;
+
+    }
+
+    #rightFooter {
+        margin: 23px 32px 0px 0px;
+    }
+
+    #lastFooterColumnLeft {
+        width: 100%;
+        text-align: right;
+        margin: 9px 0px 0px 0px;
+    }
+    #totalPriceFooter {
+        width: 100%;
+    }
+
+    .footer{
+        height: 182px;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width:1280px){
+
+    .left-content{
+        width: 543px;
+        margin-left: 14%;
+        margin-right: 14%;
+        height: 660px;
+        position: relative;
+        right: unset;
+    }
+
+    .right-content{
+        width: 100%;
+        margin-left: 14%;
+        margin-right: 14%;
+        margin-bottom: 200px;
+    }
+
+    .featuredImg{
+        width: 543px;
+        height: 337px;
+    }
+
+    .buttonImg {
+        width: 170px;
+        height: 100px;
+    }
+
+    #iconsContainer {
+        margin-left: 0px;
+        margin-top: 84px;
+    }
+
+    .text{
+        width: 542px;
+        margin-bottom: 48px;
+    }
+
+    #specificationsContainter {
+        width: 542px;
+    }
+
+    .footerColumnText {
+        display: none;
+    }
+
+    #leftFooter {
+        margin: 23px 0px -50px 14%;
+        width: 25%;
+        display: grid;
+    }
+    .footerColumn {
+        height: 45px;
+    }
+    #overviewContainter{
+        width: 542px;
+    }
+
+    .footer{
+        height: 112px;
+    }
+
+    #rightFooter {
+        margin: 23px 14% 0px 0px;
+
+    }
+
 }
