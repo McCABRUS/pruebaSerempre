@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link href="css/main.css" rel="stylesheet">
+        <script type="text/javascript" src="js/scripts.js"></script>
 		<title>MOMENTUM True Wireless 2</title>
 	</head>
 	<body>	
@@ -18,70 +19,70 @@
 				<div class="left-content">
 					<div class="gallery-container">
 						<picture id="img1" class="featuredImg">
-							<source media="(min-width:320px)" srcset="img/1.png">
-							<source media="(min-width:768px)" srcset="img/1@2x.png">
-							<source media="(min-width:1280px)" srcset="img/1@3x.png">
+							<source media="(max-width:768px)" srcset="img/1.png">
+							<source media="(min-width:769px) and (max-width:1280px)" srcset="img/1@2x.png">
+							<source media="(min-width:1281px)" srcset="img/1@3x.png">
 							<img alt="Sennheiser MOMENTUM True Wireless 2" />
 						</picture>
 						<picture id="img2" class="featuredImg hidden">
-							<source media="(min-width:320px)" srcset="img/2.png">
-							<source media="(min-width:768px)" srcset="img/2@2x.png">
-							<source media="(min-width:1280px)" srcset="img/2@3x.png">
+							<source media="(max-width:768px)" srcset="img/2.png">
+							<source media="(min-width:769px) and (max-width:1280px)" srcset="img/2@2x.png">
+							<source media="(min-width:1281px)" srcset="img/2@3x.png">
 							<img alt="Sennheiser MOMENTUM True Wireless 2" />
 						</picture>
 						<picture id="img3" class="featuredImg hidden">
-							<source media="(min-width:320px)" srcset="img/3.png">
-							<source media="(min-width:768px)" srcset="img/3@2x.png">
-							<source media="(min-width:1280px)" srcset="img/3@3x.png">
+							<source media="(max-width:768px)" srcset="img/3.png">
+							<source media="(min-width:769px) and (max-width:1280px)" srcset="img/3@2x.png">
+							<source media="(min-width:1281px)" srcset="img/3@3x.png">
 							<img alt="Sennheiser MOMENTUM True Wireless 2" />
 						</picture>
 						
-						<picture id="galleryImg1" class="buttonImg selected">
-							<source media="(min-width:320px)" srcset="img/1.png">
-							<source media="(min-width:768px)" srcset="img/1@2x.png">
-							<source media="(min-width:1280px)" srcset="img/1@3x.png">
-							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						<picture onclick="onGalleryChange(1)" id="galleryImg1" class="buttonImg selected">
+							<source media="(max-width:768px)" srcset="img/1.png">
+							<source media="(min-width:769px) and (max-width:1280px)" srcset="img/1@2x.png">
+							<source media="(min-width:1281px)" srcset="img/1@3x.png">
+							<img  alt="Sennheiser MOMENTUM True Wireless 2" />
 						</picture>
 						
-						<picture id="galleryImg2" class="buttonImg">
-							<source media="(min-width:320px)" srcset="img/2.png">
-							<source media="(min-width:768px)" srcset="img/2@2x.png">
-							<source media="(min-width:1280px)" srcset="img/2@3x.png">
-							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						<picture onclick="onGalleryChange(2)" id="galleryImg2" class="buttonImg">
+							<source media="(max-width:768px)" srcset="img/2.png">
+							<source media="(min-width:769px) and (max-width:1280px)" srcset="img/2@2x.png">
+							<source media="(min-width:1281px)" srcset="img/2@3x.png">
+							<img   alt="Sennheiser MOMENTUM True Wireless 2" />
 						</picture>
 
-						<picture id="galleryImg3" class="buttonImg">
-							<source media="(min-width:320px)" srcset="img/3.png">
-							<source media="(min-width:768px)" srcset="img/3@2x.png">
-							<source media="(min-width:1280px)" srcset="img/3@3x.png">
-							<img alt="Sennheiser MOMENTUM True Wireless 2" />
+						<picture onclick="onGalleryChange(3)" id="galleryImg3" class="buttonImg">
+							<source media="(max-width:768px)" srcset="img/3.png">
+							<source media="(min-width:769px) and (max-width:1280px)" srcset="img/3@2x.png">
+							<source media="(min-width:1281px)" srcset="img/3@3x.png">
+							<img  alt="Sennheiser MOMENTUM True Wireless 2" />
 						</picture>
 						
 					</div> 
 					<div id="iconsContainer">
 						<div class="icons">
 							<picture class="icon">
-								<source media="(min-width:320px)" srcset="img/Path.png">
-								<source media="(min-width:768px)" srcset="img/Path@2x.png">
-								<source media="(min-width:1280px)" srcset="img/Path@3x.png">
+								<source media="(max-width:768px)" srcset="img/Path.png">
+								<source media="(min-width:769px) and (max-width:1280px)" srcset="img/Path@2x.png">
+								<source media="(min-width:1281px)" srcset="img/Path@3x.png">
 								<img alt="Customizable Touch Controls" />
 							</picture>
 							<span class="iconText">Customizable Touch Controls</span>
 						</div>
 						<div class="icons">
 							<picture class="icon">
-								<source media="(min-width:320px)" srcset="img/Shape.png">
-								<source media="(min-width:768px)" srcset="img/Shape@2x.png">
-								<source media="(min-width:1280px)" srcset="img/Shape@3x.png">
+								<source media="(max-width:768px)" srcset="img/Shape.png">
+								<source media="(min-width:769px) and (max-width:1280px)" srcset="img/Shape@2x.png">
+								<source media="(min-width:1281px)" srcset="img/Shape@3x.png">
 								<img alt="Built-in Equalizer" />
 							</picture>
 							<span class="iconText">Built-in Equalizer</span>
 						</div>
 						<div class="icons">
 							<picture class="icon">
-								<source media="(min-width:320px)" srcset="img/CombinedShape.png">
-								<source media="(min-width:768px)" srcset="img/CombinedShape@2x.png">
-								<source media="(min-width:1280px)" srcset="img/CombinedShape@3x.png">
+								<source media="(max-width:768px)" srcset="img/CombinedShape.png">
+								<source media="(min-width:769px) and (max-width:1280px)" srcset="img/CombinedShape@2x.png">
+								<source media="(min-width:1281px)" srcset="img/CombinedShape@3x.png">
 								<img alt="Active Noise Cancellation" />
 							</picture>
 							<span class="iconText">Active Noise Cancellation</span>
@@ -96,31 +97,31 @@
 					<h3>STARTING AT</h3>
 					<h1>$295.95</h1>
 					<div id="optionsContainer">
-						<h4 class="item selectedSection">Overview</h4>
-						<h4 class="item">Features</h4>
-						<h4 class="item">What's in the box?</h4>
+						<h4 id="overview" onclick="onSectionClick('overview')" class="item selectedSection">Overview</h4>
+						<h4 id="features" onclick="onSectionClick('features')" class="item">Features</h4>
+						<h4 id="specifications" onclick="onSectionClick('specifications')" class="item">What's in the box?</h4>
 					</div>
 					<div id="overviewContainter">
 						<span class="text">For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True Wireless 2 is no different. Thanks to leading audio technology and innovation, these new earbuds deliver the best listening experience anytime, anywhere. With improved ergonomics designed for full day wearing and refined touch controls for a more personalised experience, they have been finely crafted for the most discerning listener and aim to simplify your life by enhancing your everyday.</span>
 						<h4 class="optionsTitle">Choose your finish.</h4>
 						<div id="itemSection">
-							<div class="colorItem" style="margin-right: 16px;">
+							<div id="white" onclick="onColorSelected('white')" class="colorItem" style="margin-right: 16px;">
 								<span class="itemTitle">Ivory White</span>
 								<span class="itemText">For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True.</span>
 							</div>
-							<div class="colorItem" style="margin-bottom:72px;">
+							<div id="black" onclick="onColorSelected('black')" class="colorItem" style="margin-bottom:72px;">
 								<span class="itemTitle">Matte Black</span>
 								<span class="itemText">Of all of the celestial bodies that capture our attention and fascination as astronomers.</span>
 							</div>
 						</div>
 						<h4 class="optionsTitle">Would you like to add extended warranty coverage?.</h4>
 						<div id="itemSection">
-							<div class="warrantyItem selected">
+							<div id="warranty2Years" onclick="onWarrantySelected('2 years', 'remove', 75)" class="warrantyItem selected">
 								<span class="itemTitle">2 years coverage</span>
 								<span class="itemText">For the past 75 years, Sennheiser has put sound first.</span>
 								<span class="addedPrice hidden">- $75</span>
 							</div>
-							<div class="warrantyItem">
+							<div id="warranty3Years" onclick="onWarrantySelected('3 years', 'add', 75)" class="warrantyItem">
 								<span class="itemTitle">3 years coverage</span>
 								<span class="itemText">For the past 75 years, Sennheiser has put sound first.</span>
 								<span class="addedPrice">+ $75</span>
@@ -131,11 +132,11 @@
 					<div id="featuresContainter" class="hidden">
 						<h4 class="optionsTitle">Features.</h4>
 						<div id="itemSection">
-							<div class="warrantyItem selected">
+							<div id="voiceAssistant" onclick="onFeaturedSelected('voiceAssistant', 'add', 0)" class="warrantyItem selected">
 								<span class="itemTitle">Voice Assistant support</span>
 								<span class="addedPrice hidden">- $25</span>
 							</div>
-							<div class="warrantyItem">
+							<div id="customControls" onclick="onFeaturedSelected('customControls', 'add', 25)" class="warrantyItem">
 								<span class="itemTitle">Customizable controls</span>
 								<span class="addedPrice">+ $25</span>
 							</div>
